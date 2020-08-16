@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\component.css" />
+    <Content Remove="wwwroot\css\demo.css" />
+    <Content Remove="wwwroot\css\organicfoodicons.css" />
+    <Content Remove="wwwroot\js\classie.js" />
+    <Content Remove="wwwroot\js\dummydata.js" />
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\js\modernizr-custom.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fileuploads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\component.css" />
+    <None Include="wwwroot\css\demo.css" />
+    <None Include="wwwroot\css\organicfoodicons.css" />
+    <None Include="wwwroot\fonts\bpicons\bpicons.eot" />
+    <None Include="wwwroot\fonts\bpicons\bpicons.svg" />
+    <None Include="wwwroot\fonts\bpicons\bpicons.ttf" />
+    <None Include="wwwroot\fonts\bpicons\bpicons.woff" />
+    <None Include="wwwroot\fonts\bpicons\license.txt" />
+    <None Include="wwwroot\fonts\feather\feather.eot" />
+    <None Include="wwwroot\fonts\feather\feather.svg" />
+    <None Include="wwwroot\fonts\feather\feather.ttf" />
+    <None Include="wwwroot\fonts\feather\feather.woff" />
+    <None Include="wwwroot\fonts\feather\feather.woff2" />
+    <None Include="wwwroot\fonts\organicfoodicons\organicfoodicons.eot" />
+    <None Include="wwwroot\fonts\organicfoodicons\organicfoodicons.svg" />
+    <None Include="wwwroot\fonts\organicfoodicons\organicfoodicons.ttf" />
+    <None Include="wwwroot\fonts\organicfoodicons\organicfoodicons.woff" />
+    <None Include="wwwroot\fonts\organicfoodicons\organicfoodicons.woff2" />
+    <None Include="wwwroot\js\classie.js" />
+    <None Include="wwwroot\js\dummydata.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\modernizr-custom.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AXTConverter.Business\AXTConverter.Business.csproj" />
+    <ProjectReference Include="..\AXTConverter.Data\AXTConverter.Data.csproj" />
+    <ProjectReference Include="..\AXTConverter.Interface\AXTConverter.Interface.csproj" />
+    <ProjectReference Include="..\AXTConverter.RestService\AXTConverter.RestService.csproj" />
+  </ItemGroup>
+
+</Project>

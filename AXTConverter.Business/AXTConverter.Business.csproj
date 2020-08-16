@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AXTConverter.Data\AXTConverter.Data.csproj" />
+    <ProjectReference Include="..\AXTConverter.Interface\AXTConverter.Interface.csproj" />
+    <ProjectReference Include="..\AXTConverter.Models\AXTConverter.Models.csproj" />
+  </ItemGroup>
+
+</Project>

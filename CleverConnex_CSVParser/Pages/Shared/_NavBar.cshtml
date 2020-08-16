@@ -1,0 +1,30 @@
+﻿<!--NAVBAR-->
+<!--===================================================-->
+<header id="navbar" style="border:2px">
+    <div id="navbar-container" class="boxed">
+
+        <!--Brand logo & name-->
+        <!--================================-->
+        
+        <!--================================-->
+        <!--End brand logo & name-->
+        <!--Navbar Dropdown-->
+        <!--================================-->
+
+        <div class="sidebar">
+            <div>
+                <a ng-href="@Url.Action("Index", "Home", new { area = "" })">
+                    <a href="#default" class="logo">CompanyLogo</a>
+                    <div class="brand-title">
+                        <span class="brand-text">CSV Parser</span>
+                    </div>
+                </a>
+            </div>
+            <a class="active" href="Index">Home</a>
+            <a href="../CSVFileUpload">CSVFileUpload</a>
+            @Html.ActionLink("CSV Upload", "CSVFileUpload", "CSVFileUpload")
+    
+        </div>
+
+    </div>
+</header>

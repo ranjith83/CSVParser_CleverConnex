@@ -1,0 +1,32 @@
+﻿@page
+@model CleverConnex_CSVParser.Pages.CSVFileUploadModel
+@{
+    ViewData["Title"] = "CSV Upload";
+}
+
+<div class="form-style-2">
+    <div class="form-style-2-heading">CSV File Upload</div>
+    <form method="post" enctype="multipart/form-data">
+        <label for="field1">
+            <span> Upload CSV <span class="required">*</span></span>
+            <input type="file" asp-for="UploadCSV" />
+        </label>
+        <input type="submit" id="btFileUpload" />
+
+        @if (@TempData["error"] != null)
+        {
+        <div class="error">@TempData["error"]</div>
+
+}
+        @if (@TempData["success"] != null)
+        {
+        <div class="success">@TempData["success"]</div>
+        
+}
+    </form>
+</div>
+
+
+
+
+
