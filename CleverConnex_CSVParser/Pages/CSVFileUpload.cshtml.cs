@@ -31,7 +31,7 @@ namespace CleverConnex_CSVParser.Pages
             try
             {
                 var postedFileExtension = Path.GetExtension(UploadCSV.FileName);
-                if (string.Equals(postedFileExtension, ".csv", StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(postedFileExtension, ".axt", StringComparison.OrdinalIgnoreCase))
                 {
 
                     var file = Path.Combine(_environment.WebRootPath, "fileuploads", UploadCSV.FileName);
@@ -45,7 +45,7 @@ namespace CleverConnex_CSVParser.Pages
                     TempData["success"] = "File Uploaded successfully";
                 }
                 else
-                    TempData["error"] = "Please upload only CSV";
+                    TempData["error"] = "Please upload only AXT";
                 
             }
             catch (Exception ex)
