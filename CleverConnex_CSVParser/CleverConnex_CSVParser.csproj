@@ -6,9 +6,6 @@
   </PropertyGroup>
 
 
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\**\*" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
@@ -23,6 +20,11 @@
     <ProjectReference Include="..\AXTConverter.Data\AXTConverter.Data.csproj" />
     <ProjectReference Include="..\AXTConverter.Interface\AXTConverter.Interface.csproj" />
     <ProjectReference Include="..\AXTConverter.RestService\AXTConverter.RestService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\fileuploads\" />
+    <Folder Include="wwwroot\fileuploads\" />
   </ItemGroup>
 
 </Project>
