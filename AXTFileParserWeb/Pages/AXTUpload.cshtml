@@ -1,0 +1,30 @@
+﻿@page
+@model AXTFileParserWeb.Pages.AXTUploadModel
+@{
+    ViewData["Title"] = "AXT Upload";
+}
+
+<h1>AXT Upload</h1>
+
+<div class="form-style-2">
+    <div class="form-style-2-heading">File Upload</div>
+    <form method="post" enctype="multipart/form-data">
+        <label for="field1">
+            <span> Upload AXT <span class="required">*</span></span>
+            <input type="file" asp-for="UploadAXT" />
+        </label>
+        <input type="submit" id="btAXTFileUpload" />
+
+        @if (@TempData["error"] != null)
+        {
+            <div class="error">@TempData["error"]</div>
+
+        }
+        @if (@TempData["success"] != null)
+        {
+            <div class="success">@TempData["success"]</div>
+
+        }
+    </form>
+</div>
+
